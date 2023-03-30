@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #242424;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    padding: 50px 0;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.text--orange {
+    color: #f98a1a;
+}
+
+p {
+    line-height: 2;
+}
+
+/* navbar */
+
+.nav__desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.nav__desc--logo {
+    width: 60px;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__links {
+    padding: 0 12px;
+    font-weight: 700;
+}
+
+/* header */
+
+#landing-page {
+    min-height: 100vh;
+}
+
+.header__desc {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+    max-width: 1000px;
+    padding: 0 30px;
+}
+
+.header__title {
+    font-size: 112px;
+}
+
+.header__para {
+    font-size: 24px;
+    max-width: 450px;
+}
+
+.header__social {
+    display: flex;
+    margin-top: 12px;
+}
+
+.header__social--list {
+    background-color: #f98a1a;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    transition: all 450ms ease;
+}
+
+.header__social--link {
+    color: white;
+    transition: all 450ms ease;
+}
+
+
+.header__social--list:hover, .header__social--link:hover {
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+
+/* projects */
+
+#projects {
+    height: 100vh;
+}
+
+.project__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project__title {
+    font-size: 40px;
+}
+
+.project__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.project__list--desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
