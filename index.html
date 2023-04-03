@@ -10,24 +10,26 @@
     <script src="https://kit.fontawesome.com/5a0b75ca10.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="nav__desc container row">
-        <figure>
-            <img src="assets/fanta-6-logo-png-transparent.png" alt="" class="nav__desc--logo">
-        </figure>
-        <ul class="nav__list">
-            <li class="nav__links">
-                <a class="nav__link link__hover-effect link__hover-effect--black" href="">About</a>
-            </li>
-            <li class="nav__links">
-                <a class="nav__link link__hover-effect link__hover-effect--black" href="">Projects</a>
-            </li>
-            <li class="nav__links" onclick="toggleModal()">
-                <a class="nav__link link__hover-effect link__hover-effect--black" href="#" >Contact</a> 
-            </li>
-            <li class="nav__links">
-                <i class="fas fa-adjust click nav__link link__hover-effect"></i>
-            </li>
-        </ul>
+    <nav>
+        <div class="row nav__desc">
+            <figure>
+                <img src="assets/fanta-6-logo-png-transparent.png" alt="" class="nav__desc--logo">
+            </figure>
+            <ul class="nav__list">
+                <li class="nav__links">
+                    <a class="nav__link link__hover-effect link__hover-effect--black" href="">About</a>
+                </li>
+                <li class="nav__links">
+                    <a class="nav__link link__hover-effect link__hover-effect--black" href="">Projects</a>
+                </li>
+                <li class="nav__links" onclick="toggleModal()">
+                    <a class="nav__link link__hover-effect link__hover-effect--black" href="#" >Contact</a> 
+                </li>
+                <li class="nav__links" onclick="toggleContrast()">
+                    <i class="fas fa-adjust click nav__link link__hover-effect"></i>
+                </li>
+            </ul>
+        </div>
     </nav>
     <header id="landing-page" onmousemove="moveBackground(event)">
         <a href="#">
@@ -89,7 +91,9 @@
                     <i class="fas fa-spinner"></i>
                 </div>
                 <div class="modal__overlay modal__overlay--success">
-                    Thanks for the message! Looking forward to speak to you soon.
+                    Thanks for the message! 
+                    <br> 
+                    Looking forward to speak to you soon.
                 </div>
                 <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
             </div>
@@ -117,9 +121,9 @@
                 <br><br>
                 <div class="resume__container">
                     Check out my resume!
-                <button class="resume__btn click">
-                    Resume
-                </button> 
+                    <button class="resume__btn click">
+                        Resume
+                    </button> 
                 </div>
             </h3>
         </div>

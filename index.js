@@ -1,5 +1,6 @@
 const scaleFactor = 1 / 20;
 let isModalOpen = false;
+let contrastToggle = false;
 
 function moveBackground(event) {
   const shapes = document.querySelectorAll(".shape");
@@ -11,6 +12,16 @@ function moveBackground(event) {
     const boolInt = isOdd ? -1 : 1;
     // Added rotate after tutorial
     shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px) rotate(${x * boolInt * 10}deg)`
+  }
+}
+
+function toggleContrast() {
+  contrastToggle = !contrastToggle;
+  if (contrastToggle) {
+    document.body.classList += " dark-theme"
+  }
+  else {
+    document.body.classList.remove("dark-theme")
   }
 }
 
