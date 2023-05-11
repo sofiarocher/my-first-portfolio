@@ -759,6 +759,13 @@ textarea {
 }
 
 @media (max-width: 480px) {
+    
+    .nav__links:nth-child(1),
+    .nav__links:nth-child(2),
+    .nav__links:nth-child(3) {
+      display: none;
+    }
+
     .header__title {
         font-size: 60px;
     }
@@ -777,6 +784,10 @@ textarea {
     }
     .resume__btn {
         width: 50%;
+    }
+    .tech__stack--list {
+        max-width: 250px;
+        margin: 0 auto;
     }
     .tech__stack--title {
         font-size: 28px;
