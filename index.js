@@ -1,3 +1,6 @@
+/* template_rw2o0gc */
+/* template_004sb2f */
+
 const scaleFactor = 1 / 20;
 let isModalOpen = false;
 let contrastToggle = false;
@@ -32,10 +35,10 @@ function contact(event) {
     loading.classList += " modal__overlay--visible";
     emailjs
       .sendForm(
-        "service_80ih0if",
-        "template_d9refyl",
+        "service_21aatt3",
+        "template_004sb2f",
         event.target,
-        "user_K1PoFs8pB2YVWStDxrUls"
+        "6bltDkhBcfkqqn4qJ"
       )
       .then(() => {
         loading.classList.remove("modal__overlay--visible");
@@ -44,7 +47,7 @@ function contact(event) {
       .catch(() => {
         loading.classList.remove("modal__overlay--visible");
         alert(
-          "The email service is temporarily unavailable. Please contact me directly on email@email.com"
+          "The email service is temporarily unavailable. Please contact me directly on sofirocher_@hotmail.com"
         );
       });
   }
@@ -58,18 +61,3 @@ function contact(event) {
     document.body.classList += " modal--open";
   }
 
-  window.addEventListener('scroll', function() {
-    // Obtener la posición actual del usuario
-    let position = window.pageYOffset || document.documentElement.scrollTop;
-  
-    // Obtener la posición de la sección
-    let section = document.getElementById('project__scroll');
-    let positionSection = section.getBoundingClientRect().top + position;
-  
-    // Si el usuario ha llegado a la sección, mostrar el contenedor
-    if (position >= positionSection) {
-      section.style.display = 'block';
-    } else {
-      section.style.display = 'none';
-    }
-  });

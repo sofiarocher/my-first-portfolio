@@ -400,13 +400,13 @@ textarea {
 }
 
 .modal__overlay--success {
-    background-color: rgb(242, 240, 240);
+    background-color: rgb(45, 131, 72);
     font-size: 40px;
     font-weight: 700;
     text-align: center;
     padding: 28px;
     z-index: -1;
-    color: #ee600e;
+    color: wheat;
 }
 
 .modal__overlay--visible {
@@ -799,9 +799,6 @@ textarea {
     .tech__stack--para {
         font-size: 12px
     }
-    #project__scroll {
-        display: none;
-      }
     .project__title {
         font-size: 28px;
     }
