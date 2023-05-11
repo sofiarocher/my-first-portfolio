@@ -799,6 +799,9 @@ textarea {
     .tech__stack--para {
         font-size: 12px
     }
+    #project__scroll {
+        display: none;
+      }
     .project__title {
         font-size: 28px;
     }

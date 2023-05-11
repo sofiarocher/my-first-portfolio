@@ -57,3 +57,19 @@ function contact(event) {
     isModalOpen = true;
     document.body.classList += " modal--open";
   }
+
+  window.addEventListener('scroll', function() {
+    // Obtener la posición actual del usuario
+    let position = window.pageYOffset || document.documentElement.scrollTop;
+  
+    // Obtener la posición de la sección
+    let section = document.getElementById('project__scroll');
+    let positionSection = section.getBoundingClientRect().top + position;
+  
+    // Si el usuario ha llegado a la sección, mostrar el contenedor
+    if (position >= positionSection) {
+      section.style.display = 'block';
+    } else {
+      section.style.display = 'none';
+    }
+  });
