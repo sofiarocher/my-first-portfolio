@@ -448,6 +448,8 @@ textarea {
 
 #about-me {
     background-color: rgb(242, 240, 240);
+    z-index: 1;
+    position: relative;
 }
 
 .about__title {
@@ -500,6 +502,11 @@ textarea {
 }
 
 /* techstack */
+
+#techstack {
+    position: relative;
+    background-color: rgb(242, 240, 240);
+}
 
 .tech__stack--title {
     padding: 50px 0;
@@ -572,6 +579,7 @@ textarea {
 #projects {
     background-color: rgb(242, 240, 240);
     padding: 60px;
+    position: relative;
 }
 
 .project__title {
@@ -592,7 +600,7 @@ textarea {
 }
 
 .project__img {
-    width: 80%;
+    width: 100%;
     transition: all 450ms ease;
 }
 

@@ -17,19 +17,19 @@
             </figure>
             <ul class="nav__list">
                 <li class="nav__links">
-                    <a class="nav__link link__hover-effect link__hover-effect--black" href="#about-me">About</a>
+                    <a class="nav__link link__hover-effect link__hover-effect--black" href="#about-me">Sobre mí</a>
                 </li>
                 <li class="nav__links">
-                    <a class="nav__link link__hover-effect link__hover-effect--black" href="#projects">Projects</a>
+                    <a class="nav__link link__hover-effect link__hover-effect--black" href="#projects">Proyectos</a>
                 </li>
                 <li class="nav__links" onclick="toggleModal()">
-                    <a class="nav__link link__hover-effect link__hover-effect--black" href="#" >Contact</a> 
+                    <a class="nav__link link__hover-effect link__hover-effect--black" href="#" >Contacto</a> 
                 </li>
                 <li class="nav__links" onclick="toggleContrast()">
                     <i class="fas fa-adjust click nav__link link__hover-effect"></i>
                 </li>
                 <li class="nav__links">
-                    <a href="es.html" class="click nav__link link__hover-effect">EN</a> 
+                    <a href="index.html" class="click nav__link link__hover-effect">ESP</a> 
                 </li>
             </ul>
         </div>
@@ -44,13 +44,13 @@
             <div class="scroll__icon click"> </div>
         </a>
         <div class="header__desc">
-            <h3 class="header__title">Hey 
-                <br> <span class="text--orange">I'm Sofía.</span>
+            <h3 class="header__title">Hola! 
+                <br> <span class="text--orange">Soy Sofía.</span>
             </h3>
             <p class="header__para">
-                I'm an aspiring 
-                <b class="text--orange">Frontend Software Engineer </b> 
-                passionate about building web applications with great user experiences.
+                Soy 
+                <b class="text--orange">Desarolladora Web </b> 
+                y soy muy apasionada sobre construir webs para crear una gran experencia de usuario.
             </p>
             <ul class="header__social">
                 <li class="header__social--list">
@@ -68,14 +68,14 @@
         <div class="modal">
             <div class="modal__half modal__contact">
                 <h3 class="modal__title modal__title--contact">
-                    Get in <span class="text--orange">touch!</span> 
+                    <span class="text--orange">Contáctame!</span> 
                 </h3>
                 <h4 class="modal__sub-title modal__sub-title--contact">
-                    I'm currently open to new opportunities.
+                    Estoy abierta a nuevas oportunidades
                 </h4>
                 <form id="contact__form" onsubmit="contact(event)">
                     <div class="form__item">
-                        <label class="form__item--label">Name</label>
+                        <label class="form__item--label">Nombre</label>
                         <input type="text" name="user_name" class="input" required></input>
                     </div>
                     <div class="form__item">
@@ -83,20 +83,20 @@
                         <input type="email" name="user_email" class="input" required></input>
                     </div>
                     <div class="form__item">
-                        <label class="form__item--label">Message</label>
+                        <label class="form__item--label">Mensaje</label>
                         <textarea type="text" name="message" class="input" required></textarea>
                     </div>
                     <button id="contact__submit" class="form__submit">
-                        Send it my way
+                       Enviar
                     </button>
                 </form>
                 <div class="modal__overlay modal__overlay--loading">
                     <i class="fas fa-spinner"></i>
                 </div>
                 <div class="modal__overlay modal__overlay--success">
-                    Thanks for the message! 
+                    Gracias por el mensaje! 
                     <br> 
-                    Looking forward to speak to you soon.
+                    Espero estar pronto en contacto contigo!
                 </div>
                 <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
             </div>
@@ -112,27 +112,27 @@
         <img src="assets/semi circle.svg" alt="" class="shape shape--8">
     </header>
     <section id="about-me" class="container">
-        <h4 class="about__title">About <span class="text--orange">me.</span> </h4>
+        <h4 class="about__title">Sobre <span class="text--orange">mí.</span> </h4>
         <div class="about__container">
             <figure>
                 <img class="about__img" src="assets/me.jpeg" alt="">
             </figure>
             <h3 class="about__description">
-                Building <span class="text--orange">beautiful</span>, <span class="text--orange">customisable</span> and <span class="text--orange">responsive</span> user experiences is my passion. I enjoy pushing myself to solve problems and creating solutions that positively affect people.
+                Crear <span class="text--orange">estéticas</span>, <span class="text--orange">customizables</span> y <span class="text--orange">responsives</span> experiencias de usuario es mi pasión. Me gusta esforzarme, resolver problemas y crear soluciones que afectan positivamente en otras personas.
                 <br><br>
-                Currently, I'm open to <b class="text--orange">new opportunities.</b>
+                Actualmente, estoy abierta a<b class="text--orange"> nuevas oportunidades.</b>
                 <br><br>
                 <div class="resume__container">
-                    Check out my resume!
+                    Chequea mi currículum!
                     <button class="resume__btn click">
-                        <a href="assets/Sofía Rocher - Resume.pdf" target="_blank">Resume</a>
+                        <a href="assets/Sofía Rocher - Resume.pdf" target="_blank">Currículum</a>
                     </button> 
                 </div>
             </h3>
         </div>
     </section>
     <section id="techstack">
-        <h4 class="tech__stack--title">This is my <b class="text--orange">technology stack</b></h4>
+        <h4 class="tech__stack--title">Estas son las<b class="text--orange"> tecnologías</b> que uso.</h4>
         <div class="tech__stack--list">
             <div class="tech__stack--container">
                 <figure class="tech__stack--img">
@@ -163,7 +163,7 @@
     <section id="projects">
         <div class="project__container row container">
             <h3 class="project__title">
-                Here are some of my <span class="text--orange">projects.</span>
+                Sobre mis <span class="text--orange">proyectos.</span>
             </h3>
             <ul class="project__list">
                 <li class="project">
@@ -178,7 +178,7 @@
                                  Html, CSS, Javascript, React
                             </h4>
                             <p class="project__description--para">
-                                This is a clone from Tesla, it has authentication with firebase, you can create an account, sign in, log in and log out! It is responsive and it was made with HTML, CSS, JS and React. 
+                                Esto es un clon de Tesla, tiene autenticación con firebase, podés crear una cuenta, iniciar sesión y cerrar sesión! Es responsive y la hice con HTML, CSS, JS and React. 
                             </p>
                             <div class="project__description--links">
                                 <a href="https://github.com/sofiarocher/teslaclone" class="project__description--link" target="_blank">
@@ -203,7 +203,7 @@
                                  Html, CSS, Javascript
                             </h4>
                             <p class="project__description--para">
-                                This is a basic landing page for a client, she needed it a web where she can redirect her clients to specific links. It's responsive and when you are on your PC, the background moves around your cursor, and when you are on your phone, the background spins automatically.
+                                Esta es una básica landing page para un cliente, la usa para redireccionar sus clientes a lo que estén interesados. Es responsive y cuando estás en PC, el fondo se mueve según el cursor, y en el Smartphone, giran automáticamente.
                             </p>
                             <div class="project__description--links">
                                 <a href="https://github.com/sofiarocher/camvillalobosweb" class="project__description--link">
