@@ -573,6 +573,18 @@ textarea {
 .react--text {
     color: rgb(17, 218, 244);
 }
+.fire--text {
+    color: rgb(244, 131, 17);
+}
+.git--text {
+    color: rgb(57, 57, 57);
+}
+.material--text {
+    color: rgb(14, 79, 164);
+}
+.api--text {
+    color: rgb(57, 57, 57);
+}
 
 /* projects */
 
